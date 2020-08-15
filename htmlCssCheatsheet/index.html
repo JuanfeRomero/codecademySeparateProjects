@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Juanfe's Cheatsheet</title>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="top">Juanfe's Markup and Style Cheatsheet</h1>
+        <nav>
+            <ul>
+                <li><a href="#html-article">HTML</a></li>
+                <li><a href="#css-article">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article id="html-article">
+            <section id="Introduction-html">
+                <h2>HTML: Basic Commands and Estructures.</h2>
+                <p>HTML (HyperText Markup Language) is used to give structure to a webpage. It's normally composed of
+                    HTML elements made of an opening tag, the content and a closing tag.</p>
+                <nav>
+                    <ul>
+                        <li><a href="#elements-estructures">Elements and Estructures</a></li>
+                        <li><a href="#tables">Tables</a></li>
+                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="#semantic-html">Semantic HTML</a></li>
+                    </ul>
+                </nav>
+            </section>
+            <section id="elements-estructures">
+                <h3>Elements and Estructures.</h3>
+                <p>This are some of the main HTML tags to give the webpage its essential structure:</p>
+                <table>
+                    <thead>
+                        <th>Element</th>
+                        <th>Syntaxis</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>DOCTYPE</td>
+                            <td><code>&lt!DOCTYPE html&gt</code></td>
+                            <td>
+                                <p>This should be the first line of all .html files signaling the browser that should
+                                    interpret the content of this file with modern HTML5 standards</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td><code>&lthtml&gt&lt/html&gt</code></td>
+                            <td>
+                                <p>The root of an HTML document, should be added after the <code>!DOCTYPE</code>
+                                    declaration. All content/structure for an HTML document should be contained between
+                                    the opening and closing <code>&lthtml&gt</code> tags.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Head</td>
+                            <td><code>&lthead&gt&lt/head&gt</code></td>
+                            <td>
+                                <p>The <code>&lthead&gt</code> element contains general information about an HTML page
+                                    that isn’t displayed on the page itself. This information is called metadata and
+                                    includes things like the title of the HTML document and links to stylesheets.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Body</td>
+                            <td><code>&ltbody&gt&lt/body&gt</code></td>
+                            <td>
+                                <p>The <code>&ltbody&gt</code> element represents the content of an HTML document.
+                                    Content inside <code>&ltbody&gt</code> tags are rendered on the web browsers.
+                                    <br>Note: There can be only one <code>&ltbody&gt</code> element in a document.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Title</td>
+                            <td><code>&lttitle&gt&lt/title&gt</code></td>
+                            <td>
+                                <p>The <code>&lttitle&gt</code> element contains a text that defines the title of an
+                                    HTML document. The title is displayed in the browser’s title bar or tab in which the
+                                    HTML page is displayed. This element should <strong>always</strong> be inside the
+                                    document’s <code>&lthead&gt</code> element.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Heading</td>
+                            <td><code>&lth1&gt&lt/h1&gt-&lth6&gt&lt/h6&gt</code></td>
+                            <td>
+                                <p>HTML can use six different levels of heading elements. The heading elements are
+                                    ordered from the highest level <code>&lth1&gt</code> to the lowest level
+                                    <code>&lth6&gt</code>.
+                                    <br>Note: these are heading and should not be used just to set the desired size of
+                                    the text, that's what CSS is for.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Div</td>
+                            <td><code><pre>&ltdiv&gt&lt/div&gt</pre></code></td>
+                            <td>
+                                <p>The <code>&ltdiv&gt</code> element is used as a container that divides an HTML
+                                    document into sections and is short for “division”. <code>&ltdiv&gt</code> elements
+                                    can contain flow content such as headings, paragraphs, links, images, etc.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Paragraphs</td>
+                            <td><code>&ltp&gt&lt/p&gt</code></td>
+                            <td>
+                                <p>The <code>&ltp&gt</code> paragraph element contains and displays a block of text.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Lists</td>
+                            <td>
+                                <ul>
+                                    <li><code>&ltul&gt &ltli&gt&lt/li&gt &lt/ul&gt</code></li>
+                                    <hr>
+                                    <li><code>&ltol&gt &ltli&gt&lt/li&gt &lt/ol&gt</code></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul>
+                                    <li>The <code>&ltul&gt</code> unordered list element is used to create a list of
+                                        items in no particular order.</li>
+                                    <li>The <code>&ltol&gt</code> ordered list element creates a list of items in
+                                        sequential order.</li>
+                                    <li>The <code>&ltli&gt</code> list item element create list items inside
+                                        <code>&ltul&gt</code> and <code>&ltol&gt</code>.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <p class="more-info"><a
+                                        href="https://www.codecademy.com/learn/learn-html/modules/learn-html-elements/cheatsheet"
+                                        target="_blank">Click here for more Information</a></p>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section id="tables">
+                <h3>Tables</h3>
+                <p>Tables let you arrange the content in columns and rows, you can customize this in many ways simply
+                    using HTML with the following elements:</p>
+                <table>
+                    <thead>
+                        <th>Element</th>
+                        <th>Syntaxis</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Table element</td>
+                            <td><code>&lttable&gt&lt/table&gt</code></td>
+                            <td>
+                                <p>In HTML, the <code>&lttable&gt</code> element has content that is used to represent a
+                                    two-dimensional table made of rows and columns.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Table Heading</td>
+                            <td><code>&ltth&gt&lt/th&gt</code></td>
+                            <td>
+                                <p>The table heading element, <code>&ltth&gt</code>, is used to add titles to rows and
+                                    columns of a table and must be enclosed in a table row element,
+                                    <code>&lttr&gt</code>.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Table Row</td>
+                            <td><code>&lttr&gt&lt/tr&gt</code></td>
+                            <td>
+                                <p>The table row element, <code>&lttr&gt</code>, is used to add rows to a table before
+                                    adding table data and table headings.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Table Data</td>
+                            <td><code>&lttd&gt&lt/td&gt</code></td>
+                            <td>
+                                <p>The table data element, <code>&lttd&gt</code>, can be nested inside a table row
+                                    element, <code>&lttr&gt</code>, to add a cell of data to a table.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Table Head</td>
+                            <td><code>&ltthead&gt&lt/thead&gt</code></td>
+                            <td>
+                                <p>The table head element, <code>&ltthead&gt</code>, defines the headings of table
+                                    columns encapsulated in table rows.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Table Body</td>
+                            <td><code>&lttbody&gt&lt/tbody&gt</code></td>
+                            <td>
+                                <p>The table body element, <code>&lttbody&gt</code>, is a semantic element that will
+                                    contain all table data other than table heading and table footer content. If used,
+                                    <code>&lttbody&gt</code> will contain all table row <code>&lttr&gt</code> elements,
+                                    and indicates that <code>&lttr&gt</code> elements make up the body of the table.
+                                    <code>&lttable&gt</code> cannot have both <code>&lttbody&gt</code> and
+                                    <code>&lttr&gt</code> as direct children.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Table Foot</td>
+                            <td><code>&lttfoot&gt&lt/tfoot&gt</code></td>
+                            <td>
+                                <p>The table footer element, <code>&lttfoot&gt</code>, uses table rows to give footer
+                                    content or to summarize content at the end of a table.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Span Attributes</td>
+                            <td>
+                                <ul>
+                                    <li><code>&lttd colspan="2"&gt&lt/td&gt</code></li>
+                                    <hr>
+                                    <li><code>&ltth rowspan="2"&gt&lt/th&gt</code></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <p>The <code>colspan</code> attribute on a table header <code>&ltth&gt</code> or table
+                                    data <code>&lttd&gt</code> element indicates how many columns that particular cell
+                                    should span within the table.<br>Similar to <code>colspan</code>, the
+                                    <code>rowspan</code> attribute on a table header or table data element indicates how
+                                    many rows that particular cell should span within the table. </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <p class="more-info"><a
+                                        href="https://www.codecademy.com/learn/learn-html/modules/learn-html-tables/cheatsheet"
+                                        target="_blank">Click here for more Information</a></p>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section id="forms">
+                <h3>Forms</h3>
+                <p>An HTML <code>&ltform&gt</code> element is responsible for collecting information to send somewhere
+                    else. You can collect information from the different types of <code>&ltinput&gt</code> elements and
+                    send it somewhere via a HTTP request.</p>
+                <table>
+                    <thead>
+                        <th>Element</th>
+                        <th>Syntaxis</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Form</td>
+                            <td><code>&ltform action="URL" method="HTTP-verb"&gt&lt/form&gt</code></td>
+                            <td>
+                                <p>&ltform&gt Can contain various input elements. When a user submits the form,
+                                    information in these input elements is passed to the source which is named in the
+                                    &ltaction&gt attribute of the form.The &ltmethod&gt attribute tells the form what to
+                                    do with that information once it’s sent. An HTTP verb is assigned to the
+                                    &ltmethod&gt attribute that determines the action to be performed.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Label</td>
+                            <td><code>&ltlabel for="input-id"&gt&lt/label&gt</code></td>
+                            <td>
+                                <p>The HTML <code>&ltlabel&gt</code> element provides identification for a specific
+                                    <code>&ltinput&gt</code> based on matching values of the <code>&ltinput&gt</code>‘s
+                                    <code>id</code> attribute and the <code>&ltlabel&gt</code>‘s <code>for</code>
+                                    attribute. By default, clicking on the <code>&ltlabel&gt</code> will focus the field
+                                    of the related <code>&ltinput&gt</code>.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Input</td>
+                            <td><code>&ltinput id="id-for-label" name="form-name" type="input-type"&gt</code></td>
+                            <td>
+                                <p>The HTML <code>&ltinput&gt</code> element is used to render a variety of input fields
+                                    on a webpage including text fields, checkboxes, buttons, etc.
+                                    <code>&ltinput&gt</code> element have a <code>type</code> attribute that determines
+                                    how it gets rendered to a page.
+                                    <br>The value of the <code>&ltinput&gt</code>‘s <b><code>name</code> and
+                                        <code>value</code></b> attribute of the element are sent as a key-value pair
+                                    when the form is submitted.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="subheading" colspan="3">Input Types</th>
+                        </tr>
+                        <tr>
+                            <td>Text</td>
+                            <td><code>&ltinput type="text"&gt</code></td>
+                            <td>
+                                <p>HTML <code>&ltinput&gt</code> elements can support text input by setting the
+                                    attribute <code>type="text"</code>. This renders a single row input field that users
+                                    can type text inside.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><code>&ltinput type="password"&gt</code></td>
+                            <td>
+                                <p></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Number</td>
+                            <td><code>&ltinput type="number"&gt</code></td>
+                            <td>
+                                <p>The HTML <code>&ltinput&gt</code> element can have the attribute
+                                    <code>type="password"</code> that renders a single row input field which allows the
+                                    user to type censored text inside the field. It is used to type in sensitive
+                                    information.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Range</td>
+                            <td><code>&ltinput type="range" name="slider-name" min="0" max="10" step="0.1"&gt</code>
+                            </td>
+                            <td>
+                                <p>A slider can be created by using the <code>type="range"</code> attribute on an HTML
+                                    <code>&ltinput&gt</code> element. The range slider will act as a selector between a
+                                    minimum and a maximum value. These values are set using the <code>min</code> and
+                                    <code>max</code> attributes respectively. The slider can be adjusted to move in
+                                    different steps or increments using the <code>step</code> attribute.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Checkbox</td>
+                            <td>
+                                <ul>
+                                    <li><code>&ltinput name="same-name" type="checkbox" value="v1"&gt</code></li>
+                                    <hr>
+                                    <li><code>&ltinput name="same-name" type="checkbox" value="v2"&gt</code></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <p>When using an HTML <code>&ltinput&gt</code> element, the <code>type="checkbox"</code>
+                                    attribute will render a single checkbox item. To create a group of checkboxes
+                                    related to the same topic, they should all use the same <code>name</code> attribute.
+                                    Since it’s a checkbox, multiple checkboxes can be selected for the same topic.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Radio</td>
+                            <td>
+                                <ul>
+                                    <li><code>&ltinput name="same-name" type="radio" value="v1"&gt</code></li>
+                                    <hr>
+                                    <li><code>&ltinput name="same-name" type="radio" value="v2"&gt</code></li>
+                                </ul>
+                            </td>
+                            <td>
+                                <p>HTML <code>&ltinput&gt</code> elements can be given a <code>type="radio"</code>
+                                    attribute that renders a single radio button. Multiple radio buttons of a related
+                                    topic are given the same <code>name</code> attribute value. Only a single option can
+                                    be chosen from a group of radio buttons.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Datalist</td>
+                            <td class="list-info">
+                                <code class="list-tab"><pre>&ltinput list="datalist-name"&gt</pre></code>
+                                <br>
+                                <code class="list-tab">&ltdatalist id="datalist-name"&gt</code>
+                                <br>
+                                <code class="option-tab">&ltoption value="option-1"/&gt</code>
+                                <code class="option-tab">&ltoption value="option-2"/&gt</code>
+                                <code class="option-tab">&ltoption value="option-3"/&gt</code>
+                                <br>
+                                <code class="list-tab">&lt/datalist&gt</code>
+                            </td>
+                            <td>
+                                <p>When using an HTML input, a basic search/autocomplete functionality can be achieved
+                                    by pairing an <code>&ltinput&gt</code> with a <code>&ltdatalist&gt</code>. To pair a
+                                    <code>&ltinput&gt</code> with a <code>&ltdatalist&gt</code> the
+                                    <code>&ltinput&gt</code>’s <code>list</code> value must match the value of the
+                                    <code>id</code> of the <code>&ltdatalist&gt</code>. The datalist element is used to
+                                    store a list of <code>&ltoption&gt</code>s.
+                                    <br>The list of data is shown as a dropdown on an <code>input</code> field when a
+                                    user clicks on the input field. As the user starts typing, the list will be updated
+                                    to show elements that best match what has been typed into the input field. The
+                                    actual list items are specified as multiple <code>option</code> elements nested
+                                    inside the <code>datalist</code>.
+                                    <br><code>datalists</code> are ideal when providing users a list of pre-defined
+                                    options, but to also allow them to write alternative inputs as well.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select</td>
+                            <td class="list-info">
+                                <code class="list-tab">&ltselect name="select-list-name"&gt</code>
+                                <br>
+                                <code class="option-tab">&ltoption value="option-1"/&gt</code>
+                                <code class="option-tab">&ltoption value="option-2"/&gt</code>
+                                <code class="option-tab">&ltoption value="option-3"/&gt</code>
+                                <br>
+                                <code class="list-tab">&lt/select&gt</code>
+                            </td>
+                            <td>
+                                <p>The HTML <code>&ltselect&gt</code> element can be used to create a dropdown list. A
+                                    list of choices for the dropdown list can be created using one or more
+                                    <code>&ltoption&gt</code> elements. By default, only one <code>&ltoption&gt</code>
+                                    can be selected at a time. Unlike the <code>datalist</code> element, the
+                                    <code>select</code> element does not require an <code>input</code> element attached
+                                    to it.
+                                    <br>The value of the selected <code>&ltselect&gt</code>’s <code>name</code> and the
+                                    <code>&ltoption&gt</code>’ s <code>value</code> attribute are sent as a key-value
+                                    pair when the form is submitted.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Text Area</td>
+                            <td><code>&lttextarea rows="#" cols="#" name="input-name"&gt&lt/textarea&gt</code></td>
+                            <td>
+                                <p>The <code>textarea</code> element is used when creating a text-box for multi-line
+                                    input (e.g. a comment section). The element supports the <code>rows</code> and
+                                    <code>cols</code> attributes which determine the height and width, respectively, of
+                                    the element.
+                                    <br>When rendered by the browser, <code>textarea</code> fields can be
+                                    stretched/shrunk in size by the user, but the <code>rows</code> and
+                                    <code>cols</code> attributes determine the initial size.
+                                    <br>Unlike the <code>input</code> element, the <code>&lttextarea&gt</code> element
+                                    has both opening and closing tags. The value of the element is the content in
+                                    between these tags (much like a <code>&ltp&gt</code> element).
+                                    <br>The value of the <code>&lttextarea&gt</code>‘s <code>name</code> and
+                                    <code>value</code> of the element are sent as a key-value pair when the form is
+                                    submitted.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Submit</strong></td>
+                            <td><code><pre>&ltinput type="submit" value="Custom Name"&gt</pre></code></td>
+                            <td>
+                                <p>HTML <code>&ltinput&gt</code> elements can have a type attribute set to submit, by
+                                    adding <code>type="submit"</code>. With this attribute included, a submit button
+                                    will be rendered and, by default, will submit the <code>&ltform&gt</code> and
+                                    execute its action.
+                                    <br>The text of a submit button is set to <code>Submit</code> by default but can
+                                    also be changed by modifying the <code>value</code> attribute.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="subheading" colspan="3">Form Validators</th>
+                        </tr>
+                        <tr>
+                            <td>Required</td>
+                            <td><code>&ltinput type="Password"&nbsp<span class="validator">required</span>&gt</code>
+                            </td>
+                            <td>
+                                <p>In HTML, input fields have an attribute called <code>required</code> which specifies
+                                    that the field must include a value. When an input has this attribute you are
+                                    obligated to complete said input in order to submit the form</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Min/Max</td>
+                            <td><code>&ltinput type="range" <span class="validator">min="1" max="100"</span>&gt</code>
+                            </td>
+                            <td>
+                                <p>In HTML, input fields with type <code>number</code> have two attributes called
+                                    <code>min</code> and <code>max</code> that specifies the minimum and maximum value
+                                    that can be entered into the field.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Min Length<br>Max Length</td>
+                            <td><code>&ltinput type="text"&nbsp<span class="validator">minlength="8" "maxlength="32"</span>&gt</code>
+                            </td>
+                            <td>
+                                <p>In HTML, an input field of type <code>text</code> has an attribute that supports
+                                    length validation. To check that the input text has a minimum length, add the
+                                    <code>minlength</code> attribute with the character count, same way if you want to
+                                    limit the characters that can be inserted in the input, add the
+                                    <code>maxlength</code> attribute with the character count. </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pattern</td>
+                            <td><code>&ltinput type="text"&nbsp<span class="validator">pattern="[A-Za-z]{3}"</span>&gt</code>
+                            </td>
+                            <td>
+                                <p>In a text input element, the <code>pattern</code> attribute uses a regular expression
+                                    to match against (or validate) the value of the <code>&ltinput&gt</code>, when the
+                                    form is submitted.
+                                    <br>Use the <code>title</code> attribute to specify text that most browsers will
+                                    display as a tooltip to explain what the requirements are to match the pattern. </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <p class="more-info"><a
+                                        href="https://www.codecademy.com/learn/learn-html/modules/learn-html-forms/cheatsheet"
+                                        target="_blank">Click here for more Information</a></p>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section id="semantic-html">
+                <h3>Semantic HTML</h3>
+                <p>Semantic HTML introduces meaning to the code we write. Before Semantic HTML the elements didn’t have
+                    any meaning as to what it does or what content goes in it. An element such as <code>&ltdiv&gt</code>
+                    was used as a general-purpose element to create things from headers to footers to articles. With
+                    Semantic HTML we were introduced to elements that tell developers and browsers exactly what it does
+                    and what content should go in it. </p>
+                <table>
+                    <thead>
+                        <th>Element</th>
+                        <th>Syntaxis</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Header</td>
+                            <td><code>&ltheader&gt&lt/header&gt</code></td>
+                            <td>
+                                <p><code>&ltheader&gt</code> describes the content that is above the
+                                    <code>&ltmain&gt</code> and usually encloses elements that are above the main
+                                    content of the webpage like navbars, logos or searchbars</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Main</td>
+                            <td><code>&ltmain&gt&lt/main&gt</code></td>
+                            <td>
+                                <p><code>&ltmain&gt</code> encapsulates the main content of a page between the
+                                    header/navigation and the footer areas.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Footer</td>
+                            <td><code>&ltfooter&gt&lt/footer&gt</code></td>
+                            <td>
+                                <p><code>&ltfooter&gt</code> includes the bottom of the page, always below
+                                    <code>&ltmain&gt</code>, it's where the things like copyright declarations or
+                                    contact information/links go</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Navigation</td>
+                            <td><code>&ltnav&gt&lt/nav&gt</code></td>
+                            <td>
+                                <p><code>nav</code> encapsulates the navigational links of the webpage, it's usually
+                                    placed in the <code>&ltheader&gt</code> or <code>&ltfooter&gt</code>.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Section</td>
+                            <td><code>&ltsection&gt&lt/section&gt</code></td>
+                            <td rowspan="2">
+                                <p><code>&ltsection&gt</code> defines elements in a document, such as chapters,
+                                    headings, or any other area of the document with the same theme.
+                                    <code>&ltarticle&gt</code> holds content that makes sense on its own such as
+                                    articles, blogs, and comments. Generally developers will use
+                                    <code>&ltsection&gt</code> to define a theme for the webpage and use
+                                    <code>&ltarticle&gt</code> to write independent content for that theme. This does
+                                    not mean that <code>&ltarticle&gt</code> has to be used with
+                                    <code>&ltsection&gt</code>. </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Article</td>
+                            <td><code>&ltarticle&gt&lt/article&gt</code></td>
+                        </tr>
+                        <tr>
+                            <td>Aside</td>
+                            <td><code>&ltaside&gt&lt/aside&gt</code></td>
+                            <td>
+                                <p>The <code>&ltaside&gt</code> element is used to mark additional information that can
+                                    enhance another element but isn’t required in order to understand the main content.
+                                    Usually, this information would be in a sidebar or a location where it doesn’t
+                                    obstruct the main piece of content.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Figure</td>
+                            <td rowspan="2" class="list-info">
+                                <code class="list-tab">&ltfigure&gt</code>
+                                <br>
+                                <code class="option-tab">&ltfigcaption&gt</code>
+                                <code class="option-tab">&lt/figcaption&gt</code>
+                                <br>
+                                <code class="list-tab">&lt/figure&gt</code></td>
+                            <td rowspan="2">
+                                <p>The <code>&ltfigure&gt</code> element is used to encapsulate media such as an image,
+                                    diagram. or code snippet. The <code>&ltfigcaption&gt</code> element is used to
+                                    describe the media encapsulated within the <code>&ltfigure&gt</code> element.
+                                    Developers will normally use <code>&ltfigcaption&gt</code> within the
+                                    <code>&ltfigure&gt</code> element to group the media and description. This way, if a
+                                    developer decides to change the position of the media, the description will follow
+                                    along with it.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Figcaption</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Media tags</td>
+                            <td><code>&ltvideo src="video_file.mp4"&gtVideo Not Supported&lt/video&gt</code></td>
+                            <td rowspan="3">
+                                <p>Semantic HTML introduces us to <code>&ltvideo&gt</code>, <code>&ltaudio&gt</code> and
+                                    <code>&ltembed&gt</code>. <code>&ltvideo&gt</code> allows us to add videos to our
+                                    website. <code>&ltaudio&gt</code> allows us to implement audio into our website.
+                                    <code>&ltembed&gt</code> can be used to implement any type of media. These elements
+                                    are universal in that they all use the src attribute to link the source of the
+                                    content. <code>&ltvideo&gt</code> and <code>&ltaudio&gt</code> requires a closing
+                                    tag while <code>&ltembed&gt</code> is a self-closing tag.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>&ltaudio src="audio_file.mp3"&gt&lt/audio&gt</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&ltembed src="media_file.gif"/&gt</code></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <p class="more-info"><a
+                                        href="https://www.codecademy.com/learn/learn-html/modules/learn-semantic-html/cheatsheet"
+                                        target="_blank">Click here for more Information</a></p>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+        <article id="css-article">
+            <h2>CSS: Syntaxis and Correct Application.</h2>
+            <nav>
+                <ul>
+                    <li><a href="#selectors-rules">Selectors and Visual Rules</a></li>
+                    <li><a href="#box-model">The Box Model</a></li>
+                    <li><a href="#Display-Position">Display and Positioning</a></li>
+                    <li><a href="#css-colors">Colors</a></li>
+                    <li><a href="#typography">Typography</a></li>
+                    <li><a href="#grid">Grid</a></li>
+                    <li><a href="#css-transitions">CSS Transitions</a></li>
+                </ul>
+            </nav>
+        </article>
+    </main>
+    <footer>
+        <p><a href="#top">Back to the Top</a></p>
+    </footer>
+</body>
+
+</html>
