@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+nav ul li, #logo{
+    display: inline-block;
+    margin: 10px;
+    padding: 12px;
+}
+nav ul li a {
+    font-size: 30px;
+}
+#logo img{
+    width: 50px;
+    height: fit-content;
+}
+.banner {
+    background-image: url("../media/backgroundBanner.jpg");
+    width: 100%;
+    height: 150px;
+    margin: auto;
+}
+.banner h1 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#colors {
+    width: 30%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+td, th {
+    height: 200px;
+    width: 200px;
+    font-size: 32px;
+}
+
+th {
+    background-color: grey;
+}
+
+#warm {
+    color: rgb(8, 8, 104);
+}
+#cool {
+    color: rgb(212, 124, 137);
+}
+
+#pink {
+    background-color: #FF33B5;
+}
+#red {
+    background-color: #FF3333;
+}
+#orange {
+    background-color: #FF9933;
+}
+#yellow {
+    background-color: #F6FF33;
+}
+#lightGreen {
+    background-color: #5BFF33;
+}
+#darkGreen {
+    background-color: #25B904;
+}
+#lightBlue {
+    background-color: #04B1B9;
+}
+#blue {
+    background-color: #043BB9;
+}
+#darkBlue {
+    background-color: #130C7E;
+}
+#purple {
+    background-color: #6D14AB;
+}
+
+#fonts {
+    width: 50%;
+    margin: 0px auto;
+}
+
+#fonts li {
+    border: dashed 2px rgb(155, 150, 150);
+    display: block;
+    margin-bottom: 25px;
+}
+
+.lexend {
+    font-family: 'Lexend Peta', sans-serif;
+    font-size: 22px;
+}
+
+.source {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 25px;
+}
+
+.anton {
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.lobster {
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+q, code {
+    background-color: rgba(155, 150, 150, 0.637);
+}
+
+#styles h1{
+    text-decoration: underline;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 5px;
+}
+
+h2{
+    display: table-cell;
+    border-bottom: dashed 2px blue;
+    font-family: 'Anton', sans-serif;
+    font-size: 35px;
+}
+
+h3 {
+    font-family: 'Lexend Peta', sans-serif;
+}
